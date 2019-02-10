@@ -33,7 +33,7 @@ $(document).ready(function(){
   if ($(window).width() < 576) {
 
     // append h1 image in section 3 on home page
-    $('.section3 h2').before('<img class="seo-header" src="/assets/seo_h1_mobile.png">');
+    // $('.section3 h2').before('<img class="seo-header" src="/assets/seo_h1_mobile.png">');
 
     // handler for marketing services nav list
     $('.navigation li:first-child').click(function(){
@@ -64,7 +64,7 @@ $(document).ready(function(){
   } else {
 
     // append key in section 3 on homepage (alternative to h1 img in mobile)
-    $('.section3 h2').before('<img src="/assets/orange_key.png">');
+    // $('.section3 h2').before('<img src="/assets/orange_key.png">');
     // excel image only on desktop
     $('#about-section1').append('<img src="/assets/About_excel_desktop.png">');
 

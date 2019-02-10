@@ -18,7 +18,7 @@ section {
 	position: absolute;
 }
 .hero .img-div {
-  background:url('/assets/homepage_hero_desktop.png') no-repeat center;
+  background:url('../assets/homepage_hero_desktop.png') no-repeat center;
   background-size:cover;
 }
 .hero .img-wrapper {
@@ -47,7 +47,7 @@ section {
 	bottom: 0;
 }
 .section1 .img-div {
-  background:url("/assets/white_climbers.png") no-repeat center;
+  background:url("../assets/white_climbers.png") no-repeat center;
 	background-size:cover;
 }
 
@@ -58,7 +58,7 @@ section {
 	padding: 8% 26% 7% 8%;
 }
 .section2 .img-div {
-  background:url("/assets/topagraphy_desktop.png") no-repeat center;
+  background:url("../assets/topagraphy_desktop.png") no-repeat center;
 	background-size:cover;
 }
 .section2 .img-wrapper {
@@ -78,7 +78,7 @@ section {
 	color: #fff;
 }
 .section3 .img-div {
-  background:url("/assets/home_green_tress_desktop.png") no-repeat center;
+  background:url("../assets/home_green_tress_desktop.png") no-repeat center;
 	background-size:cover;
 }
 .section3 .img-wrapper {
@@ -107,7 +107,7 @@ section {
 	padding: 7% 26% 19% 8%;
 }
 .section4 .img-div {
-  background:url("/assets/home_graph_climbers_desktop.png") no-repeat center;
+  background:url("../assets/home_graph_climbers_desktop.png") no-repeat center;
 	background-size:cover;
 }
 .section4 .img-wrapper {
@@ -153,7 +153,7 @@ section {
 @media only screen and (max-width: 575px) {
   /* hero */
 	.hero .img-div {
-		background:url('/assets/homepage_hero_mobile.png') no-repeat center;
+		background:url('../assets/homepage_hero_mobile.png') no-repeat center;
 		background-size:cover;
 	}
 	.hero .img-wrapper {
@@ -255,7 +255,7 @@ section {
     padding-bottom: 117%;
   }
 	.section5 .img-div {
-	  background:url('/assets/homepage_footer_mobile.png') no-repeat center;
+	  background:url('../assets/homepage_footer_mobile.png') no-repeat center;
 	  background-size:cover;
 	}
 
@@ -296,11 +296,11 @@ section {
 		position: relative; width: 100%;
 	}
 	.section5 .img-div {
-	  background:url("/assets/homepage_section5_desktop.png") no-repeat center;
+	  background:url("../assets/homepage_section5_desktop.png") no-repeat center;
 		background-size:cover;
 	}
   footer {
-    background:url('/assets/footer.png') no-repeat center;
+    background:url('../assets/footer.png') no-repeat center;
     background-position: center;
     background-size:cover;
     top: 0; bottom: 0; left: 0; right: 0;
