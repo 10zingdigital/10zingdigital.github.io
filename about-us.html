@@ -12,6 +12,11 @@
   </head>
   <body>
 
+    <a href="#navigation" class="nav-trigger">
+        Menu <span></span>
+      </a>
+
+    <main>
     <header>
       <div id="home" class="outer-img-wrapper">
         <div class="img-wrapper">
@@ -19,38 +24,6 @@
           </div>
         </div>
       </div>
-      <ul class="navigation">
-        <li>
-          <div class="sub-nav-wrapper">
-            <span>MARKETING SERVICES</span>
-            <ul id="services">
-              <div class="arrow-down"></div>
-              <li id="facebook-link">
-                <a>FACEBOOK ADVERTISING</a>
-                <div></div>
-              </li>
-              <li id="paid-link">
-                <a>PAID SEARCH MARKETING</a>
-                <div></div>
-              </li>
-              <li id="seo-link">
-                <a>SEO KEYWORD OPTIMIZATION</a>
-                <div></div>
-              </li>
-              <li id="measurement-link">
-                <a>MEASUREMENT & ANALYTICS</a>
-                <div></div>
-              </li>
-              <li id="cross-channel-link">
-                <a>CROSS-CHANNEL STRATEGY</a>
-                <div></div>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li id="about">ABOUT US</li>
-        <li id="contact">CONTACT US</li>
-      </ul>
     </header>
 
     <section class="hero about">
@@ -115,7 +88,38 @@
       </div>
     </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+      <footer>
+      <div class="img-div">
+        <img src="./assets/homepage_footer_mobile.png" />
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </main>
+
+      <nav class="nav-container" id="navigation">
+      <ul class="nav">
+        <li><a href="./index.html">Marketing Services</a></li>
+        <ul>
+          <li><a href="./index.html#facebook-advertising">Facebook Advertising</a></li>
+          <li><a href="./index.html#paid-search-marketing">Paid Search Marketing</a></li>
+          <li><a href="./index.html#seo-keyword-optimization">SEO Keyword Optimization</a></li>
+          <li><a href="./index.html#measurement-and-analytics">Measurement & Analytics</a></li>
+          <li><a href="./index.html#cross-channel-marketing-strategy">Cross-Channel Strategy</a></li>
+        </ul>
+        <li><a href="./our-work.html">Our Work</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="./contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+
+    <div class="overlay"></div> <!-- improve main element 3d movement -->
+
+
     <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
