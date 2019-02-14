@@ -3,34 +3,60 @@
   <head>
     <meta charset="utf-8">
     <title>10ZING Digital | Search, Social and Cross-Channel Marketing</title>
-    <link href="./styles/main.css" type="text/css" rel="stylesheet">
-    <!-- <link href="index.css" type="text/css" rel="stylesheet"> -->
+    <link href="/styles/main.css" type="text/css" rel="stylesheet">
+    <link href="index.css" type="text/css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="10ZING Digital is a full-service internet marketing agency specializing in Facebook advertising, search engine marketing, analytics, and cross-channel strategy.">
-    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-    <link rel="manifest" href="./site.webmanifest">
-    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
   </head>
-  <body class="home">
+  <body>
 
-      <a href="#navigation" class="nav-trigger">
-        Menu <span></span>
-      </a>
-
-    <main>
-     <header>
+    <header>
       <div id="home" class="outer-img-wrapper">
         <div class="img-wrapper">
           <div class="img-div">
           </div>
         </div>
       </div>
-      
+      <ul class="navigation">
+        <li>
+          <div class="sub-nav-wrapper">
+          <span>MARKETING SERVICES</span>
+            <ul id="services">
+              <div class="arrow-down"></div>
+              <li id="facebook-link">
+                <a>FACEBOOK ADVERTISING</a>
+                <div></div>
+              </li>
+              <li id="paid-link">
+                <a>PAID SEARCH MARKETING</a>
+                <div></div>
+              </li>
+              <li id="seo-link">
+                <a>SEO KEYWORD OPTIMIZATION</a>
+                <div></div>
+              </li>
+              <li id="measurement-link">
+                <a>MEASUREMENT & ANALYTICS</a>
+                <div></div>
+              </li>
+              <li id="cross-channel-link">
+                <a>CROSS-CHANNEL STRATEGY</a>
+                <div></div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li id="about">ABOUT US</li>
+        <li id="contact">CONTACT US</li>
+      </ul>
     </header>
 
     <section class="hero">
@@ -66,8 +92,11 @@
     </section>
 
     <section class="section3" id="seo-keyword-optimization">
+      <div class="outer-img-wrapper">
         <div class="img-wrapper">
+          <div class="img-div"></div>
         </div>
+      </div>
       <div class="content">
         <h2>SEO KEYWORD OPTIMIZATION</h2>
         <p style="width:98%;">The syntax of search engine optimization can be hard to decipher given all the buzz in the industry about this and that tactic. On-page vs. off-page, head vs. long tail terms, meta vs. H1 tags – it’s enough to make your head spin.</p>
@@ -107,38 +136,9 @@
       </div>
     </section>
 
-    <footer>
-      <div class="img-div">
-        <img src="./assets/homepage_footer_mobile.png" />
-      </div>
-      <nav class="footer-nav">
-        <ul>
-          <li><a href="./terms.html">Terms & Conditions</a></li>
-        </ul>
-      </nav>
-    </footer>
-  </main>
+    <footer></footer>
 
-    <nav class="nav-container" id="navigation">
-      <ul class="nav">
-        <li><a href="#">Marketing Services</a></li>
-        <ul>
-          <li><a href="#facebook-advertising">Facebook Advertising</a></li>
-          <li><a href="#paid-search-marketing">Paid Search Marketing</a></li>
-          <li><a href="#seo-keyword-optimization">SEO Keyword Optimization</a></li>
-          <li><a href="#measurement-and-analytics">Measurement & Analytics</a></li>
-          <li><a href="#cross-channel-marketing-strategy">Cross-Channel Strategy</a></li>
-        </ul>
-        <li><a href="./our-work.html">Our Work</a></li>
-        <li><a href="./about-us.html">About Us</a></li>
-        <li><a href="./contact-us.html">Contact Us</a></li>
-      </ul>
-    </nav>
-
-
-    <div class="overlay"></div> <!-- improve main element 3d movement -->
-
-
-    <script type="text/javascript" src="./index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>

@@ -23,11 +23,11 @@ section {
   padding-bottom: 98%;
 }
 .about .bio.alex .img-div {
-  background:url("../assets/alex_mobile.png") no-repeat center;
+  background:url("/assets/alex_mobile.png") no-repeat center;
   background-size:cover;
 }
 .about .bio.juan .img-div {
-  background:url("../assets/juan_mobile.png") no-repeat center;
+  background:url("/assets/juan_mobile.png") no-repeat center;
   background-size:cover;
 }
 
@@ -38,7 +38,7 @@ section {
 }
 
 footer {
-  background:url('../assets/footer.png') no-repeat center;
+  background:url('/assets/footer.png') no-repeat center;
   background-position: center;
   background-size:cover;
   top: 0; bottom: 0; left: 0; right: 0;
@@ -65,7 +65,7 @@ Desktop = 576+
 @media only screen and (max-width: 575px) {
 
   .hero .img-div {
-    background:url('../assets/About_hero_mobile.png') no-repeat center;
+    background:url('/assets/About_hero_mobile.png') no-repeat center;
     background-size:cover;
   }
   .hero .img-wrapper {
@@ -117,7 +117,7 @@ Desktop = 576+
 		padding: 10% 0 106%;
 	}
 	.section5.about .img-div {
-	  background:url('../assets/About_footer_mobile.png') no-repeat center;
+	  background:url('/assets/About_footer_mobile.png') no-repeat center;
 	  background-size:cover;
 	}
 	.section5.about .img-wrapper {
@@ -154,8 +154,22 @@ Desktop = 576+
 
   /* hero */
   .hero .img-div {
-    background:url('../assets/About_hero_desktop.png') no-repeat center;
+    background:url('/assets/About_hero_desktop.png') no-repeat center;
     background-size:cover;
+  }
+
+  /* about section */
+  .section1-v2 {
+    padding: 4% 14% 20%;
+  }
+  .section1-v2 p {
+    padding-left: 11%;
+  }
+  .section1-v2 img {
+    position: absolute;
+    width: 24%;
+    right: 5%;
+    bottom: 10%;
   }
 
   /* bio section */
@@ -206,7 +220,7 @@ Desktop = 576+
     width: 100%;
 	}
 	.section5 .img-div {
-	  background:url("../assets/About_footer_desktop.png") no-repeat center;
+	  background:url("/assets/About_footer_desktop.png") no-repeat center;
 		background-size:cover;
 	}
   .section5.about .content {
