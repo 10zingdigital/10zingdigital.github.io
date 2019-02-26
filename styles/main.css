@@ -36,27 +36,28 @@ h1 {
 }
 
 h2 {
-	font-family:'Oswald',sans-serif;
+	font-family:'Sequel Rounded',sans-serif;
 	text-align:center;
 	margin:0 0 53px;
 	letter-spacing:1.4px;
-	font-size:3.8em;
+	font-size:3em;
 	line-height:1.1em;
+	font-weight: 200;
 }
 
 h3 {
-	font-family:'Oswald',sans-serif;
+	font-family:'Sequel Rounded',sans-serif;
 	text-align:center;
 	margin:6% 0 12%;
 	letter-spacing:3.4px;
-	font-size:1.5em;
+	font-size:2em;
 }
 
 p {
 	font-family:'Bitter',serif;
 	letter-spacing:1px;
 	margin-bottom:33px;
-	font-size:1.8em;
+	font-size:calc(1.0em + 0.5vw);
 	line-height:1.4;
 }
 
@@ -68,7 +69,8 @@ header {
 	text-align:center;
 	color:#fff;
 	font-family:'Sequel Rounded',sans-serif;
-	letter-spacing:.2em;
+	font-weight: 600;
+	letter-spacing:.1em;
 	max-height:47px;
 	font-size:1em;
 	top: 35px;
@@ -214,9 +216,9 @@ section {
 }
 
 .section2 {
-	color:#fff;
-	background:#4b4d49;
-	padding:20% 26% 45% 8%;
+	color:#000;
+	background:#717570;
+	padding:25% 26% 50% 8%;
 	transform:skewY(20deg);
 	transform-origin:top left;
 	overflow:hidden;
@@ -236,16 +238,16 @@ section {
 }
 
 .section2 .outer-img-wrapper {
-	width:70%;
-	top:-7%;
-	left:-4%;
+	width: 50%;
+    top: -1%;
+    left: -4%;
 }
 
 .section3 {
 	background:#3a3a38;
 	color:#fff;
 	padding:15% 6% 50% 32%;
-	margin-bottom:-80%;
+	margin-bottom:-73%;
 	transform:skewY(-20deg);
 	transform-origin:top left;
 	overflow:hidden;
@@ -264,7 +266,7 @@ section {
 }
 
 .section3 .img-div {
-	background-size:cover;
+	background-size:contain;
 }
 
 .section3 .img-wrapper {
@@ -272,8 +274,8 @@ section {
 	left:0;
 	height:100%;
 	background:url(../assets/home_green_tress_desktop.png) no-repeat;
-	background-size:100%;
-	background-position:0 2%;
+	background-size:80%;
+	background-position:0 0;
 }
 
 .section3 .content img {
@@ -292,14 +294,14 @@ section {
 	transform:skewY(20deg);
 	transform-origin:top left;
 	background:#fff;
-	padding:15% 26% 35% 8%;
+	padding:25% 26% 50% 8%;
 	position:relative;
 	overflow:hidden;
 }
 
 .section4 .img-div {
 	background:url(../assets/home_graph_climbers_desktop.png) no-repeat center;
-	background-size:cover;
+	background-size:contain;
 }
 
 .section4 .img-wrapper {
@@ -360,7 +362,7 @@ section {
 
 .section5 .img-div {
 	background:url(../assets/homepage_section5_desktop.png) no-repeat center;
-	background-size:cover;
+	background-size:contain;
 }
 
 footer {
