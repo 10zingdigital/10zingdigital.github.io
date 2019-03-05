@@ -25,6 +25,14 @@ html, body {
     -o-font-smoothing: antialiased;
   /* overflow-x: hidden;  */
 }
+
+main {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  transition: transform .5s;
+}
+
 h1 {
   font-family: 'Sequel Rounded', sans-serif;
   position: absolute;
