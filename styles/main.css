@@ -20,6 +20,7 @@ html,body {
 	-webkit-font-smoothing:antialiased;
 	-moz-font-smoothing:antialiased;
 	-o-font-smoothing:antialiased;
+	color: #222;
 }
 
 h1 {
@@ -40,7 +41,7 @@ h2 {
 	text-align:center;
 	margin:0 0 53px;
 	letter-spacing:1.4px;
-	font-size:3em;
+	font-size:calc(2em + 0.5vw);
 	line-height:1.1em;
 	font-weight: 200;
 }
@@ -72,7 +73,7 @@ header {
 	font-weight: 600;
 	letter-spacing:.1em;
 	max-height:47px;
-	font-size:1em;
+	
 	top: 35px;
 }
 
@@ -80,6 +81,11 @@ header ul {
 	list-style:none;
 	padding-left:0;
 	margin:0;
+
+}
+
+header ul.navigation {
+	font-size:calc(0.9em + .1vw);
 }
 
 header > ul > li {
@@ -103,7 +109,7 @@ header ul ul li {
 	color:#fff;
 	padding:12px 0;
 	position:relative;
-	margin:0 -20px;
+	margin:0 -30px;
 }
 
 header a {
@@ -114,9 +120,19 @@ header a,header a:visited,header a:hover,header a:active {
 	color:inherit;
 }
 
+header h3.headline {
+	text-transform: uppercase;
+    margin: 25vw auto 0;
+    width: 100%;
+    letter-spacing: .5em;
+    font-size: calc(1.5em + 0.5vw);
+    position: absolute;
+}
+
 .sub-nav-wrapper {
 	margin:-18px -34% 0;
 	padding:18px 0 0;
+	position: relative;
 }
 
 .arrow-down {
@@ -171,8 +187,8 @@ section {
 }
 
 .hero .img-div {
-	background:url(../assets/homepage_hero_desktop.png) no-repeat center;
-	background-size:cover;
+	background:url(../assets/homepage_hero_desktop.png) no-repeat top;
+	background-size:contain;
 }
 
 .hero .img-wrapper {
@@ -182,19 +198,21 @@ section {
 
 .content {
 	margin:0 auto;
+	max-width: 900px;
 	z-index:100;
 	position:relative;
 }
 
-.section1 {
+.home .section1 {
 	background:#fff;
 	padding:66px 0 18%;
 	margin-bottom:-18%;
 }
 
-.section1 .content {
-	margin:0 0 0 22%;
-	width:62%;
+.home .section1 .content {
+	margin:0 auto 5%;
+	width:70vw;
+	max-width: 900px;
 }
 
 .section1 .img-wrapper {
@@ -216,7 +234,7 @@ section {
 }
 
 .section2 {
-	color:#000;
+	color:#222;
 	background:#717570;
 	padding:25% 26% 50% 8%;
 	transform:skewY(20deg);
@@ -381,14 +399,13 @@ footer {
 	transform:skewY(-20deg);
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 768px) {
 	p {
 		font-size:1.3em;
 		margin:0 0 6%;
 	}
 
 	h2 {
-		font-size:3em;
 		margin:0 auto 6%;
 		text-align:center;
 	}
@@ -453,6 +470,10 @@ footer {
 		background:none;
 		margin:23px auto 0;
 		padding:0;
+	}
+
+	header h3.headline {
+		display: none;
 	}
 
 	.sub-nav-wrapper {
@@ -589,7 +610,7 @@ footer {
 	}
 }
 */
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
 	.navigation li:hover {
 		color:#FF8110;
 	}
@@ -620,7 +641,7 @@ footer {
 	}
 
 	header > ul {
-		padding:18px 0 18px 150px;
+		padding:18px 0 18px 100px;
 	}
 
 	.error404 a {
