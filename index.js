@@ -1,76 +1,8 @@
 $(document).ready(function(){
 
-  // navigation links
-  $('#home').click(function(){
-    window.location.href="/";
-  });
-  $('#about').click(function(){
-    window.location.href="/about-us";
-  });
-  $('#contact').click(function(){
-    window.location.href="/contact-us";
-  });
-
-  // sub nav
-  $('#facebook-link').click(function(){
-    window.location.href="/#facebook-advertising";
-  });
-  $('#paid-link').click(function(){
-    window.location.href="/#paid-search-marketing";
-  });
-  $('#seo-link').click(function(){
-    window.location.href="/#seo-keyword-optimization";
-  });
-  $('#measurement-link').click(function(){
-    window.location.href="/#measurement-and-analytics";
-  });
-  $('#cross-channel-link').click(function(){
-    window.location.href="/#cross-channel-marketing-strategy";
-  });
-
 
   // MOBILE-SPECIFIC JS
-  if ($(window).width() < 576) {
-
-    // append h1 image in section 3 on home page
-    // $('.section3 h2').before('<img class="seo-header" src="/assets/seo_h1_mobile.png">');
-
-    // handler for marketing services nav list
-    $('.navigation li:first-child').click(function(){
-      if (!$(this).hasClass('services-expanded')) {
-        $('.navigation li').css('padding-bottom', '9px');
-        $('header ul ul li').css('color', '#fff');
-        $('#services').show();
-        $(this).addClass('services-expanded');
-      } else {
-        $('.navigation li').css('padding-bottom', '20px');
-        $('#services').hide();
-        $(this).removeClass('services-expanded');
-      }
-    });
-
-    $('header ul ul li').click(function(){
-      $(this).css('color', '#FF8110');
-    });
-
-    // chrome back button bug
-    window.onhashchange = function(event) {
-      if (window.location.hash === "") {
-        window.scrollTo(0,0);
-      }
-    }
-
-  // DESKTOP
-  } else {
-
-    // append key in section 3 on homepage (alternative to h1 img in mobile)
-    // $('.section3 h2').before('<img src="/assets/orange_key.png">');
-    // excel image only on desktop
-    $('#about-section1').append('<img src="/assets/About_excel_desktop.png">');
-
-    $('.sub-nav-wrapper span').click(function(){
-      window.location.href="/";
-    });
+  if ($(window).width() > 768) {
 
     // handler for marketing services nav list
     $('.navigation li:first-child').hover(function(){
@@ -127,3 +59,34 @@ $(document).ready(function(){
   // });
 
 });
+
+// Mobile Nav:
+// 
+var navTrigger = document.getElementsByClassName('nav-trigger')[0],
+    body = document.getElementsByTagName('body')[0],
+    linkTrigger = document.querySelectorAll('ul.nav a, .overlay');
+
+navTrigger.addEventListener('click', toggleNavigation);
+
+linkTrigger.forEach(
+  function(link){
+    link.addEventListener('click', hideNavigation);
+  });
+
+function toggleNavigation(event) {
+  event.preventDefault();
+  body.classList.toggle('nav-open');
+}
+
+function hideNavigation(event) {
+  setTimeout(function(){body.classList.remove('nav-open')},500);
+}
+
+window.onscroll = function() {
+  if (window.pageYOffset >= 200) {
+    body.classList.add('scrolled');
+  } else {
+    body.classList.remove('scrolled');
+  }
+}
+
