@@ -56,7 +56,7 @@ h3 {
 	font-weight: 600;
 }
 
-p {
+p, .terms .content li {
 	font-family:'Bitter',serif;
 	letter-spacing:1px;
 	margin-bottom:33px;
@@ -228,10 +228,6 @@ section {
 	background-size:cover;
 }
 
-
-
-
-
 .home .section1 {
 	background:#fff;
 	padding: 10em 0 18%;
@@ -270,6 +266,7 @@ section {
 	transform-origin:top left;
 	overflow:hidden;
 	position:relative;
+	color:#000;
 }
 
 .home .section2 .img-div {
@@ -308,8 +305,21 @@ section {
 	margin: 0 auto .5em;
 	vertical-align: middle;
 	display: block;
-	background: url('../assets/orange_key.png') no-repeat;
+		background: url('../assets/orange_key.png') no-repeat;
 	background-size:  contain;
+
+}
+
+.home .section3 .content {
+	transform:skewY(20deg);
+}
+
+.home .section4 {
+	transform:skewY(20deg);
+	transform-origin:top left;
+	background:#fff;
+	padding:25% 26% 50% 8%;
+	position:relative;
 }
 
 .home .section3 .img-div {
@@ -331,18 +341,6 @@ section {
 	position:relative;
 	top:21px;
 	left:-7px;
-}
-
-.home .section3 .content {
-	transform:skewY(20deg);
-}
-
-.home .section4 {
-	transform:skewY(20deg);
-	transform-origin:top left;
-	background:#fff;
-	padding:25% 26% 50% 8%;
-	position:relative;
 	overflow:hidden;
 }
 
@@ -433,7 +431,7 @@ section {
 	position:relative;
 }
 
-.about .content {
+.about .content, .terms .content {
 	margin: 0 auto;
     width: 70vw;
     max-width: 900px;
@@ -619,6 +617,22 @@ input,textarea {
   }
 
   /* End Contact Us Sections */
+
+  /* Terms */
+
+  .terms .hero .img-div {
+	background:url(../assets/terms_hero_desktop.png) no-repeat bottom;
+	background-size:cover;
+}
+
+.terms .section1 {
+	margin: 10em auto;
+}
+
+.terms .section1 .content > ol > ol > li {
+	list-style-type: lower-alpha;
+}
+
 
 /* Footer */
 
@@ -1057,7 +1071,7 @@ list-style: none;
 
 	.home .section2 {
 		padding:25% 10% 51%;
-		color:#fff;
+		
 	}
 
 	.home .section2 h2 {
