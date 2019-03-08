@@ -493,7 +493,7 @@ section {
 .contact section.contact-us {
     background-position: center;
     height: 100vh;
-    background:url('/assets/contact_backgound_desktop.png') no-repeat center;
+    background:url('../assets/contact_backgound_desktop.png') no-repeat center;
     background-size:cover;
     background-attachment: fixed;
   }
