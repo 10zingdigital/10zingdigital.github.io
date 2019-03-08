@@ -945,7 +945,7 @@ list-style: none;
 
 	}
 
-	.about header .img-div, .work header .img-div, .contact header .img-div {
+	.about header .img-div, .work header .img-div, .contact header .img-div, .terms header .img-div {
 		background:url(../assets/logo_mobile.png) no-repeat center;
 		background-size:cover;
 		background-position:center;
