@@ -493,6 +493,7 @@ section {
 .contact section.contact-us {
 	background-position: center;
 	height: 100vh;
+	min-height: 100vw;
 	background:url('../assets/contact_backgound_desktop.png') no-repeat center;
 	background-size:cover;
 	background-attachment: fixed;
@@ -820,7 +821,7 @@ footer .img-div img {
 .nav a {
 	display: block;
 	padding: .4em 0;
-	font-size: 2em;
+	font-size: calc(1.2em + 0.5vw);
 	font-weight: bold;
 	font-family:'Sequel Rounded',sans-serif;
 	text-decoration: none;
@@ -1017,6 +1018,7 @@ footer .img-div img {
 
 	.home .hero .img-wrapper, .about .hero .img-wrapper {
 		height: 90vh;
+		min-height: 110vh;
 	}
 
 	.about .bio {
