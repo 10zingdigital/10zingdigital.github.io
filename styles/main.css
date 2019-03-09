@@ -190,6 +190,7 @@ header h3.headline {
 
 section {
 	position:relative;
+	overflow:  hidden;
 }
 
 .img-div {
