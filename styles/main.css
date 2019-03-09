@@ -694,6 +694,8 @@ main {
 	z-index: 1;
 	height: 100vh;
 	transition: transform .5s;
+	scroll-behavior: smooth;
+	overflow-x:  hidden;
 }
 
 .nav-open main {
@@ -714,7 +716,7 @@ main {
 	transition:  transform .2s;
 }
 
-.nav-trigger:hover {
+.nav-trigger:active {
 	transform:  scale(1.2);
 }
 
@@ -724,14 +726,8 @@ main {
 	position: absolute;
 	height: 4px;
 	width: 36px;
-	background: #fff;
+	background: #ff8110;
 	transition: color .5s;
-}
-
-body.scrolled:not(.nav-open) .nav-trigger span,
-body.scrolled:not(.nav-open) .nav-trigger span::before,
-body.scrolled:not(.nav-open) .nav-trigger span::after {
-	background:  #ff8110;
 }
 
 .nav-trigger span {
@@ -759,9 +755,9 @@ body.scrolled:not(.nav-open) .nav-trigger span::after {
 	transform: translateY(12px);
 }
 
-.nav-trigger:hover span, 
-.nav-trigger:hover span::before,
-.nav-trigger:hover span::after {
+.nav-trigger:active span, 
+.nav-trigger:active span::before,
+.nav-trigger:active span::after {
 	background: #f60;
 }
 
@@ -772,11 +768,6 @@ body.scrolled:not(.nav-open) .nav-trigger span::after {
 .nav-open .nav-trigger span::before,
 .nav-open .nav-trigger span::after {
 	background: #1F2B3D;
-}
-
-.nav-open .nav-trigger:hover span::before,
-.nav-open .nav-trigger:hover span::after {
-	background: #ff8110;
 }
 
 .nav-open .nav-trigger span::before {
@@ -929,9 +920,8 @@ body.scrolled:not(.nav-open) .nav-trigger span::after {
 		position: relative;
 		top: 10vh;
 		left: 0;
-		width: 100%;
-		margin: 0 auto;
-		max-width: 500px;
+		width: 60vw;
+		margin: 0 auto 2em;
 	}
 
 	header .img-wrapper {
@@ -957,9 +947,7 @@ body.scrolled:not(.nav-open) .nav-trigger span::after {
 	}
 
 	.home header .img-div {
-		background-size: 40vw;
-		background position: center top;
-
+		background-size: contain;
 	}
 
 	header > ul.navigation {
