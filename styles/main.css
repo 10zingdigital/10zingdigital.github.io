@@ -889,7 +889,7 @@ main {
 
 /* End Nav */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 	p {
 		font-size:1.3em;
 		margin:0 0 6%;
