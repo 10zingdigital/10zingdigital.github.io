@@ -140,7 +140,8 @@ header a,header a:visited,header a:hover,header a:active {
 header h3.headline {
 	text-transform: uppercase;
 	margin: 40vh auto 0;
-	width: 100%;
+	width: 90vw;
+	padding:  0 5vw;
 	letter-spacing: .5em;
 	font-size: calc(1.2em + 0.5vw);
 	position: absolute;
@@ -1013,7 +1014,8 @@ footer .img-div img {
 		background-size:cover;
 	}
 
-	.home .hero .img-wrapper, .about .hero .img-wrapper {
+	.home .hero .img-wrapper, .about .hero .img-wrapper, .terms .hero .img-wrapper {
+		height:  90vh;
 		height: calc(var(--vh, 1vh) * 90);
 		min-height: 110vw;
 	}
