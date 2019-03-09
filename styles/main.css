@@ -20,7 +20,7 @@ html,body {
 	-moz-font-smoothing:antialiased;
 	-o-font-smoothing:antialiased;
 	color: #222;
-
+	height: 99vh;
 }
 
 h1 {
