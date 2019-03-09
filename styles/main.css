@@ -20,7 +20,6 @@ html,body {
 	-moz-font-smoothing:antialiased;
 	-o-font-smoothing:antialiased;
 	color: #222;
-	height: 99vh;
 }
 
 h1 {
@@ -1015,8 +1014,8 @@ footer .img-div img {
 	}
 
 	.home .hero .img-wrapper, .about .hero .img-wrapper {
-		height: 90vh;
-		min-height: 110vh;
+		height: calc(var(--vh, 1vh) * 90);
+		min-height: 110vw;
 	}
 
 	.about .bio {
