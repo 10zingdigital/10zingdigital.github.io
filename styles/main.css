@@ -145,7 +145,7 @@ header h3.headline {
 	margin: 40vh auto 0;
 	width: 100%;
 	letter-spacing: .5em;
-	font-size: calc(1.5em + 0.5vw);
+	font-size: calc(1.2em + 0.5vw);
 	position: absolute;
 }
 
@@ -690,24 +690,9 @@ footer .img-div img {
 
 /* Nav */
 
-main {
-	position: relative;
-	z-index: 1;
-	height: 100vh;
-	transition: transform .5s;
-	scroll-behavior: smooth;
-	overflow-x:  hidden;
-	overflow-y:  scroll;
-	-webkit-overflow-scrolling: touch;
-}
-
-.nav-open main {
-	transform: translateX(-10px); 
-}
-
 .nav-trigger {
 	position: fixed;
-	z-index: 4;
+	z-index: 200;
 	top: 40px;
 	right: 40px;
 	height: 44px;
@@ -801,7 +786,7 @@ main {
 
 .nav-container {
 	position: fixed;
-	z-index: 3;
+	z-index: 100;
 	top: 0;
 	right: 0;
 	height: 100%;
@@ -921,9 +906,9 @@ main {
 
 	.home header .outer-img-wrapper {
 		position: relative;
-		top: 10vh;
+		top: 15vh;
 		left: 0;
-		width: 60vw;
+		width: 50vw;
 		margin: 0 auto 2em;
 	}
 
