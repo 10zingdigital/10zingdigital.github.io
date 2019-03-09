@@ -696,6 +696,8 @@ main {
 	transition: transform .5s;
 	scroll-behavior: smooth;
 	overflow-x:  hidden;
+	overflow-y:  scroll;
+	-webkit-overflow-scrolling: touch;
 }
 
 .nav-open main {
