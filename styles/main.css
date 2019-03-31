@@ -40,7 +40,7 @@ h2 {
 	text-align:center;
 	margin:0 0 53px;
 	letter-spacing:0.05em;
-	font-size:calc(1.4em + 1.2vw);
+	font-size:calc(1.1em + 1.6vw);
 	line-height:1.2em;
 	font-weight: 200;
 }
@@ -59,7 +59,7 @@ p, .terms .content li {
 	letter-spacing:0.01em;
 	margin-bottom:1.5em;
 	font-size:calc(0.4em + 1.2vw);
-	line-height:1.4;
+	line-height:1.5em;
 }
 
 header {
