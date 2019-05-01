@@ -643,6 +643,9 @@ footer .img-div {
 footer .img-div img {
 	width: 100%;
 	position: absolute;
+}
+
+body:not(.terms) footer .img-div img {
 	background-color: #b3b0a6;
 }
 
