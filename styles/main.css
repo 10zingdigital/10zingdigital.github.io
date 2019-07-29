@@ -1239,7 +1239,7 @@ body:not(.terms) footer .img-div img {
     display: none;
   }
 
-  footer .img-div:after {
+  .home footer .img-div:after {
     content: "";
     background: #3a3939;
     height: 8vw;
