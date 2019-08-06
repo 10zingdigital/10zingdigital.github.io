@@ -29,7 +29,19 @@ $(document).ready(function(){
       $('body').toggleClass('nav-open');
     })
 
-    $('ul.nav a, .overlay').click(function() {
+    $('ul.nav a, .overlay').click(function(e) {
+
+      // smooth scroll to target
+      e.preventDefault();
+      $('body.home').animate(
+        {
+          scrollTop: $($(this).attr('href')).offset().top,
+        },
+        500,
+        'linear'
+      );
+
+      // hide the mobile menu on click
       setTimeout(function() {
         $('body').removeClass('nav-open');
       }, 400);
