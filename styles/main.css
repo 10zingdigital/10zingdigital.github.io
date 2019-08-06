@@ -62,6 +62,12 @@ p,
   line-height: 1.5em;
 }
 
+.anchor {
+  position: absolute;
+  display: block;
+  visibility: hidden;
+}
+
 header {
   position: absolute;
   z-index: 99;
@@ -250,6 +256,10 @@ section > * {
   margin-bottom: -18%;
 }
 
+.home .section1 .anchor {
+  top: calc(2vw + 2vh);
+}
+
 .home .section1 .content {
   margin: 0 auto 5%;
   width: 70vw;
@@ -290,6 +300,10 @@ section > * {
   color: #000;
 }
 
+.home .section2 .anchor {
+  top: calc(20vw + 20vh);
+}
+
 .home .section2 .img-div {
   background: url(../assets/topagraphy_desktop.png) no-repeat center;
   background-size: cover;
@@ -326,6 +340,10 @@ section > * {
   transform-origin: top left;
 }
 
+.home .section3 .anchor {
+  top: calc(2vw + 2vh);
+}
+
 .home .section3 h2:before {
   content: "";
   width: 2em;
@@ -343,18 +361,6 @@ section > * {
   -ms-transform: skewY(20deg); /* Internet Explorer */
   -o-transform: skewY(20deg); /* Opera */
   transform: skewY(20deg); /* W3C */
-}
-
-.home .section4 {
-  -webkit-transform: skewY(20deg); /* Safari & Chrome */
-  -moz-transform: skewY(20deg); /* Firefox */
-  -ms-transform: skewY(20deg); /* Internet Explorer */
-  -o-transform: skewY(20deg); /* Opera */
-  transform: skewY(20deg); /* W3C */
-
-  transform-origin: top left;
-  background: #fff;
-  padding: 18% 26% 40% 8%;
 }
 
 .home .section3 .img-div {
@@ -383,6 +389,22 @@ section > * {
   overflow: hidden;
 }
 
+.home .section4 {
+  -webkit-transform: skewY(20deg); /* Safari & Chrome */
+  -moz-transform: skewY(20deg); /* Firefox */
+  -ms-transform: skewY(20deg); /* Internet Explorer */
+  -o-transform: skewY(20deg); /* Opera */
+  transform: skewY(20deg); /* W3C */
+
+  transform-origin: top left;
+  background: #fff;
+  padding: 18% 26% 40% 8%;
+}
+
+.home .section4 .anchor {
+  top: calc(15vw + 15vh);
+}
+
 .home .section4 .img-div {
   background: url(../assets/home_graph_climbers_desktop.png) no-repeat center;
   background-size: contain;
@@ -401,19 +423,23 @@ section > * {
 
 .home .section4 .outer-img-wrapper {
   width: 35%;
-  bottom: 30%;
+  bottom: 38%;
   right: 3%;
 }
 
 .home .section5 {
   background: #b3b0a6;
-  padding: 16% 4% 20% 30%;
-  margin-bottom: -25%;
+  padding: 20% 4% 20% 30%;
+  margin-bottom: -20%;
   -webkit-transform: skewY(20deg); /* Safari & Chrome */
   -moz-transform: skewY(20deg); /* Firefox */
   -ms-transform: skewY(20deg); /* Internet Explorer */
   -o-transform: skewY(20deg); /* Opera */
   transform: skewY(20deg); /* W3C */
+}
+
+.home .section5 .anchor {
+  top: calc(15vw + 15vh);
 }
 
 .home .section5 .outer-img-wrapper {
@@ -547,7 +573,6 @@ section > * {
 .contact section.contact-us {
   background-position: center;
   height: 100vh;
-  min-height: 100vw;
   background: url("../assets/contact_backgound_desktop.png") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
@@ -701,13 +726,19 @@ span.required {
 
 /* Footer */
 
-footer .img-div {
+.home footer {
+  background: #b3b0a6;
+  height: 40vw;
   position: relative;
+}
+
+footer .img-div {
 }
 
 footer .img-div img {
   width: 100%;
-  position: relative;
+  position: absolute;
+  bottom: 0;
 }
 
 body:not(.terms) footer .img-div img {
@@ -952,7 +983,25 @@ body:not(.terms) footer .img-div img {
 
 /* End Nav */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
+  .home .section1 .anchor {
+  }
+
+  .home .section2 .anchor {
+    top: calc(20vw + 10vh);
+  }
+
+  .home .section3 .anchor {
+    top: 0;
+  }
+
+  .home .section4 .anchor {
+    top: calc(15vw + 5vh);
+  }
+
+  .home .section5 .anchor {
+  }
+
   p {
     font-size: 1.3em;
     margin: 0 0 6%;
@@ -1157,7 +1206,7 @@ body:not(.terms) footer .img-div img {
   }
 
   .home .section5 {
-    padding: 18% 10% 60vw;
+    padding: 20% 10% 60vw;
     margin-bottom: -30%;
   }
 
@@ -1194,7 +1243,7 @@ body:not(.terms) footer .img-div img {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .nav-trigger,
   nav#mobile-navigation {
     display: none;
@@ -1239,14 +1288,6 @@ body:not(.terms) footer .img-div img {
     display: none;
   }
 
-  .home footer .img-div:after {
-    content: "";
-    background: #3a3939;
-    height: 8vw;
-    margin-top: -5px;
-    display: block;
-  }
-
   .contact-wrapper,
   .contact h3.headline {
     left: 21vw;
@@ -1259,5 +1300,22 @@ body:not(.terms) footer .img-div img {
 @media only screen and (min-width: 1200px) {
   .section4 .outer-img-wrapper {
     bottom: 30%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .home .section1 .anchor {
+  }
+
+  .home .section2 .anchor {
+  }
+
+  .home .section3 .anchor {
+  }
+
+  .home .section4 .anchor {
+  }
+
+  .home .section5 .anchor {
   }
 }
