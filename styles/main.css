@@ -1210,7 +1210,8 @@ body:not(.terms) footer .img-div img {
   }
 
   .home .section5 {
-    padding: 20% 10% 60vw;
+    padding: 20% 10%;
+    padding-bottom: 60vw;
     margin-bottom: -30%;
   }
 
