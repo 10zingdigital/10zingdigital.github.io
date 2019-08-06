@@ -46,16 +46,20 @@ $(document).ready(function() {
     }, 400);
   });
 
-  // smooth scroll to target on home page
+  // smooth scroll to target on home page for browsers that don't support scroll-behavior property
 
-  $("body.home ul.nav ul a").click(function(e) {
-      e.preventDefault();
-      $("html,body").animate(
-        {
-          scrollTop: $($(this).attr("href")).offset().top
-        },
-        500,
-        "linear"
-      );
+  if (!CSS.supports("(scroll-behavior: scroll)")) {
+    $("body.home ul.nav ul a").click(function(e) {
+    e.preventDefault();
+    $("html,body").animate(
+      {
+        scrollTop: $($(this).attr("href")).offset().top
+      },
+      500,
+      "linear"
+    );
   });
+  }
+
+
 });

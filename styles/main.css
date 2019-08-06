@@ -118,7 +118,7 @@ header > ul > li {
   display: inline-block;
   vertical-align: top;
   cursor: pointer;
-  padding: 0 6%;
+  padding: 0 7%;
 }
 
 header ul ul {
@@ -1277,7 +1277,7 @@ body:not(.terms) footer .img-div img {
   }
 
   header > ul.navigation {
-    padding: 18px 0 18px 100px;
+    padding: 18px;
   }
 
   .error404 a {
