@@ -1252,6 +1252,17 @@ body:not(.terms) footer .img-div img {
     color: #ff8110;
   }
 
+
+@media only screen and (min-width: 769px) {
+  .nav-trigger,
+  nav#mobile-navigation {
+    display: none;
+  }
+
+  .navigation li:hover {
+    color: #ff8110;
+  }
+
   header .outer-img-wrapper {
     position: absolute;
     width: 70px;
