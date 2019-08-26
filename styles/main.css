@@ -1228,6 +1228,19 @@ body:not(.terms) footer .img-div img {
 }
 
 }
+@media only screen and (max-width: 450px) {
+  .home .section1 .img-wrapper {
+    bottom: 9%;
+  }
+
+  .home .section4 .outer-img-wrapper {
+    bottom: 13%;
+  }
+
+  .home .section5 {
+    padding-bottom: 100vw;
+  }
+}
 
 @media only screen and (min-width: 769px) {
   .nav-trigger,
