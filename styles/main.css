@@ -520,7 +520,7 @@ body.home {
 }
 
 .about .section2 .outer-img-wrapper {
-  width: 80%;
+  width: 50%;
   position: relative;
   margin: 0 auto;
 }
@@ -535,7 +535,7 @@ body.home {
 }
 
 .about .bio {
-  width: 44%;
+  width: 100%;
   display: inline-block;
 }
 .about .bio.juan {
@@ -973,6 +973,10 @@ body:not(.terms) footer .img-div img {
 /* End Nav */
 
 @media only screen and (max-width: 768px) {
+  .about .section2 .outer-img-wrapper {
+    width: 80%;
+  }
+
   .home .section1 .anchor {
   }
 
